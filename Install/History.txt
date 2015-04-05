@@ -1,0 +1,38 @@
+Clocks-Sounds
+
+Version 1.70 (2003.10.08)
+
+  Features Added:
+   o Upgraded install program: Better look, components page, ...
+   o New option: "Disable during screen saver"
+
+
+Version 1.60 (2003.06.16)
+
+  Features Added:
+   o New Bell tower sound.
+   o Upgraded alarm clock option dialog.
+
+  Bugs Fixed:
+   o Corrected some chime bugs.
+
+	
+Version 1.51
+
+  Features Added:
+   o Upgrated the "Stop" function.
+   o Now using WinXP style.
+   o New option: "Run at Windows startup"
+
+
+Version 1.41
+
+  Bugs Fixed:
+   o Removed playing bugs.
+
+
+Version 1.40
+
+  Features Added:
+   o Functions increased.
+   o Translated into French.

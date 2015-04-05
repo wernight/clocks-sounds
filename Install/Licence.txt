@@ -1,0 +1,20 @@
+CLOCKS-SOUNDS
+Copyright (c) 1998-2003 ALC Informatique (www.alc.net)
+
+LIBERTY'S, le spécialiste des Pendules et Horloges anciennes, vous propose de télécharger son logiciel CLOCKS-SOUNDS. Il vous permettra de retrouver le son des horloges anciennes sur votre ordinateur de bureau.
+Vous pourrez choisir entre 6 sons différents sons avec sonnerie à l'heure, à  la demi, et même au quart avec la sonnerie Westminster. 
+
+LIBERTY'S vous offre ce logiciel dans sa version complête et non limitée.
+Ce logiciel peut être librement donné à vos amis à condition que tous les fichiers le composant soient présents, mais le code ne peut être modifié sans l'autorisation de son auteur.
+
+Ce logiciel ne devra jamais être vendu.
+
+
+LIBERTY'S
+Marché Vernaison Allée 3/5 Stand 105
+93400 ST-OUEN -FRANCE-
+http://www.libertys.com
+E-Mail: libertys@libertys.com
+
+Configuration minimale: PC : 486 avec 8 M0 RAM, Ecran SVGA 256-couleurs,
+Carte son 16 bits, Windows (c) 98/Me/2000/XP.

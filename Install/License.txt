@@ -1,0 +1,21 @@
+CLOCKS-SOUNDS
+Copyright (c) 1998-2003 ALC Informatique (www.alc.net)
+
+LIBERTY'S, the specialist in the sale and repair of old clocks, offer you its CLOCKS-SOUNDS software.
+This will allow you to hear the sounds of the olds clocks on your computer.
+You may choose between 6 different sounds with chime on the hour and the half-hour and even the quarters with the Westminster sound. 
+With this new version, you may set up a bell to wake you up at any specificated time.
+
+LIBERTY'S offer you this software in its complete version.
+This software may be given to your friends but not be sold.
+All of its elements must be given with the main program and no change can be done without the permission of its author.
+
+
+LIBERTY'S
+Marche Vernaison Allee 3/5 Stand 105
+93400 ST-OUEN -FRANCE-
+http://www.libertys.com
+E-Mail: libertys@libertys.com
+
+Required: PC : 486 with 8 M0 RAM, SVGA Video card with 256-colors,
+16 bits Sound card, Windows (c) 98/Me/2000/XP.

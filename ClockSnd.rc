@@ -1,0 +1,600 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res/ClockSnd.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CLOCKSND            ICON                    "res\\ClockSnd.ico"
+IDI_CLOCKSND16          ICON                    "res\\ClockSnd16x16.ico"
+IDI_BELL1               ICON                    "res\\Bell.ico"
+IDI_BELL2               ICON                    "res\\ico00001.ico"
+IDI_BELL3               ICON                    "res\\bell3.ico"
+IDI_BELL4               ICON                    "res\\bell4.ico"
+IDI_ALARM               ICON                    "res\\ico00002.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LIBERTYS            BITMAP                  "res\\lib.bmp"
+IDB_LIBERTYS_A          BITMAP                  "res\\libertys.bmp"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 217, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Clocks-Sounds"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         162,IDC_LOGO_PICTURE,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE | NOT WS_VISIBLE,0,18,50,55
+    ICON            IDI_CLOCKSND,IDC_STATIC,26,12,20,20
+    LTEXT           "Clocks-Sounds v1.70",IDC_STATIC,57,5,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (c) 2001  LIBERTY'S",IDC_STATIC,57,15,119,8
+    LTEXT           "Allow you to hear the sound of six different old clocks on your computer with chime every hour, half-hour and quarter.",
+                    IDC_STATIC,57,47,131,26
+    DEFPUSHBUTTON   "OK",IDOK,178,8,32,14,WS_GROUP
+    EDITTEXT        IDC_WEB_EDIT,57,27,86,11,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 167, 126
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,24,50,14
+    GROUPBOX        "Chime",IDC_STATIC,7,7,85,55
+    PUSHBUTTON      "test",IDC_TESTER15H00_BUTTON,13,19,16,10
+    CONTROL         "Hours",IDC_HEURES_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,34,19,48,10
+    PUSHBUTTON      "test",IDC_TESTER00H15_BUTTON,13,45,16,10
+    CONTROL         "1/4 Hours",IDC_14HEURES_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,34,45,48,10
+    PUSHBUTTON      "test",IDC_TESTER00H30_BUTTON,13,32,16,10
+    CONTROL         "1/2 Hours",IDC_12HEURES_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,34,32,48,10
+    LTEXT           "Clock type :",IDC_STATIC,7,73,41,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_HORLOGE_COMBO,50,73,110,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Load Clocks-Sounds at Windows startup",
+                    IDC_WINSTART_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,95,144,10
+    CONTROL         "Disable during screen saver",IDC_SCREENSAVER_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,109,103,10
+END
+
+IDD_SONNERIE DIALOGEX 0, 0, 229, 154
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bell options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,172,51,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,172,69,50,14
+    GROUPBOX        "Alarm clock",IDC_STATIC,7,7,215,26
+    CONTROL         "Disable",IDC_ALARM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,18,17,53,10
+    CONTROL         "Every day",IDC_ALARM2_RADIO,"Button",BS_AUTORADIOBUTTON,
+                    85,17,53,10
+    CONTROL         "Date && Hour",IDC_ALARM3_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,152,17,53,10
+    GROUPBOX        "Setup",IDC_STATIC,7,47,156,84
+    LTEXT           "Type of bell :",IDC_STATIC,17,60,43,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE_COMBO,65,61,64,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "test",IDC_TESTER_BUTTON,131,62,16,10
+    LTEXT           "Time :",IDC_STATIC,17,83,47,14,SS_CENTERIMAGE
+    LTEXT           "Date :",IDC_STATIC,17,106,47,14,SS_CENTERIMAGE
+    CTEXT           "Date en cours",IDC_DATENOW_STATIC,7,137,215,10,
+                    SS_SUNKEN
+    CONTROL         "",IDC_DATEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,70,106,59,15
+    CONTROL         "",IDC_TIMEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,70,83,59,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 210
+        VERTGUIDE, 57
+        TOPMARGIN, 5
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        VERTGUIDE, 13
+        VERTGUIDE, 34
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_SONNERIE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        VERTGUIDE, 17
+        VERTGUIDE, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+        HORZGUIDE, 17
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SONNERIE DLGINIT
+BEGIN
+    IDC_TYPE_COMBO, 0x403, 12, 0
+0x6557, 0x7473, 0x696d, 0x736e, 0x6574, 0x0072, 
+    IDC_TYPE_COMBO, 0x403, 7, 0
+0x7543, 0x6b63, 0x6f6f, "\000" 
+    IDC_TYPE_COMBO, 0x403, 5, 0
+0x6f43, 0x6b63, "\000" 
+    0
+END
+
+IDD_OPTIONS DLGINIT
+BEGIN
+    IDC_HORLOGE_COMBO, 0x403, 12, 0
+0x6557, 0x7473, 0x696d, 0x736e, 0x6574, 0x0072, 
+    IDC_HORLOGE_COMBO, 0x403, 30, 0
+0x7246, 0x6e65, 0x6863, 0x6320, 0x6f6c, 0x6b63, 0x7720, 0x7469, 0x2068, 
+0x7262, 0x6e6f, 0x657a, 0x6220, 0x6c65, 0x006c, 
+    IDC_HORLOGE_COMBO, 0x403, 11, 0
+0x6542, 0x6c6c, 0x7420, 0x776f, 0x7265, "\000" 
+    IDC_HORLOGE_COMBO, 0x403, 7, 0
+0x7543, 0x6b63, 0x6f6f, "\000" 
+    IDC_HORLOGE_COMBO, 0x403, 18, 0
+0x7247, 0x6e61, 0x6664, 0x7461, 0x6568, 0x2072, 0x6c63, 0x636f, 0x006b, 
+
+    IDC_HORLOGE_COMBO, 0x403, 25, 0
+0x7246, 0x6e65, 0x6863, 0x6320, 0x6f6c, 0x6b63, 0x7720, 0x7469, 0x2068, 
+0x7073, 0x6972, 0x676e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_MENU MENU 
+BEGIN
+    POPUP "Barre des tâches"
+    BEGIN
+        MENUITEM "About...",                    ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_OPTIONS_MENU
+        MENUITEM "Alarm clock",                 ID_SONNERIE
+        MENUITEM SEPARATOR
+        MENUITEM "Stop",                        ID_FINSON
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,7,0,0
+ PRODUCTVERSION 1,7,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Allow you to hear the sounds of the olds clocks on your computer."
+            VALUE "CompanyName", "LIBERTY'S"
+            VALUE "FileDescription", "Clocks-Sounds MFC Application by WBC"
+            VALUE "FileVersion", "1, 7, 0, 0"
+            VALUE "InternalName", "Clocks-Sounds"
+            VALUE "LegalCopyright", "Copyright (C) 2001 Liberty's"
+            VALUE "OriginalFilename", "ClockSnd.exe"
+            VALUE "ProductName", "Clocks-Sounds Application"
+            VALUE "ProductVersion", "1, 7, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\SystemTrayDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_HORLOGE_COMBO       "Carillon westminster"
+    1101                    "Horloge à Cloche bronze"
+    1102                    "Clochet d'église"
+    1103                    "Coucou"
+END
+
+STRINGTABLE 
+BEGIN
+    1104                    "Pendule de parquet"
+    1105                    "Horloge à Spirale"
+END
+
+STRINGTABLE 
+BEGIN
+    11100                   "Westminster"
+    11101                   "French clock with bronze bell"
+    11102                   "Bell tower"
+    11103                   "Cookoo"
+END
+
+STRINGTABLE 
+BEGIN
+    11104                   "Grandfather clock"
+    11105                   "French clock with spring"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_WEB_EDIT            "http://www.libertys.com/"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WBEROUX             "Par WBC : http://www.alc.net/wbc/"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 217, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "A propose de Clocks-Sounds"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         162,IDC_LOGO_PICTURE,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE | NOT WS_VISIBLE,0,18,50,55
+    ICON            IDI_CLOCKSND,IDC_STATIC,26,12,20,20
+    LTEXT           "Clocks-Sounds v1.70",IDC_STATIC,57,5,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (c) 2001  LIBERTY'S",IDC_STATIC,57,15,119,8
+    LTEXT           "Vous permet d'écouter le son de six anciennes horloges sur votre ordinateur avec une sonnerie et un réveil avancé.",
+                    IDC_STATIC,57,47,131,26
+    DEFPUSHBUTTON   "OK",IDOK,178,8,32,14,WS_GROUP
+    EDITTEXT        IDC_WEB_EDIT,57,27,86,11,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 167, 126
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,7,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,110,24,50,14
+    GROUPBOX        "Sonneries",IDC_STATIC,7,7,85,55
+    PUSHBUTTON      "test",IDC_TESTER15H00_BUTTON,13,19,16,10
+    CONTROL         "Heures",IDC_HEURES_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,34,19,48,10
+    PUSHBUTTON      "test",IDC_TESTER00H15_BUTTON,13,45,16,10
+    CONTROL         "1/4 Heures",IDC_14HEURES_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,34,45,52,10
+    PUSHBUTTON      "test",IDC_TESTER00H30_BUTTON,13,32,16,10
+    CONTROL         "1/2 Heures",IDC_12HEURES_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,34,32,52,10
+    LTEXT           "Horloge :",IDC_STATIC,7,73,41,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_HORLOGE_COMBO,50,73,110,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Lancer au démarrage de Windows",IDC_WINSTART_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,95,125,10
+    CONTROL         "Désactiver durant l'écran de veille",
+                    IDC_SCREENSAVER_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,109,123,10
+END
+
+IDD_SONNERIE DIALOGEX 0, 0, 229, 154
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alarme"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,172,51,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,172,69,50,14
+    GROUPBOX        "Réveil",IDC_STATIC,7,7,215,26
+    CONTROL         "Désactivé",IDC_ALARM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,18,17,53,10
+    CONTROL         "Tous les jours",IDC_ALARM2_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,85,17,58,10
+    CONTROL         "Date && Heure",IDC_ALARM3_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,152,17,58,10
+    GROUPBOX        "Options",IDC_STATIC,7,47,156,84
+    LTEXT           "Horloge :",IDC_STATIC,17,60,44,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_TYPE_COMBO,65,60,64,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "test",IDC_TESTER_BUTTON,131,62,16,10
+    LTEXT           "Heure :",IDC_STATIC,17,83,46,14,SS_CENTERIMAGE
+    LTEXT           "Date :",IDC_STATIC,17,101,46,14,SS_CENTERIMAGE
+    CTEXT           "Date en cours",IDC_DATENOW_STATIC,7,137,215,10,
+                    SS_SUNKEN
+    CONTROL         "",IDC_DATEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,70,101,59,15
+    CONTROL         "",IDC_TIMEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,70,82,59,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 210
+        VERTGUIDE, 57
+        TOPMARGIN, 5
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        VERTGUIDE, 13
+        VERTGUIDE, 34
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_SONNERIE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        VERTGUIDE, 17
+        VERTGUIDE, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+        HORZGUIDE, 17
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SONNERIE DLGINIT
+BEGIN
+    IDC_TYPE_COMBO, 0x403, 21, 0
+0x6143, 0x6972, 0x6c6c, 0x6e6f, 0x5720, 0x7365, 0x6d74, 0x6e69, 0x7473, 
+0x7265, "\000" 
+    IDC_TYPE_COMBO, 0x403, 7, 0
+0x6f43, 0x6375, 0x756f, "\000" 
+    IDC_TYPE_COMBO, 0x403, 4, 0
+0x6f43, 0x0071, 
+    0
+END
+
+IDD_OPTIONS DLGINIT
+BEGIN
+    IDC_HORLOGE_COMBO, 0x403, 21, 0
+0x6143, 0x6972, 0x6c6c, 0x6e6f, 0x5720, 0x7365, 0x6d74, 0x6e69, 0x7473, 
+0x7265, "\000" 
+    IDC_HORLOGE_COMBO, 0x403, 24, 0
+0x6f48, 0x6c72, 0x676f, 0x2065, 0x20e0, 0x6c43, 0x636f, 0x6568, 0x6220, 
+0x6f72, 0x7a6e, 0x0065, 
+    IDC_HORLOGE_COMBO, 0x403, 17, 0
+0x6c43, 0x636f, 0x6568, 0x2072, 0x2764, 0x67e9, 0x696c, 0x6573, "\000" 
+    IDC_HORLOGE_COMBO, 0x403, 7, 0
+0x6f43, 0x6375, 0x756f, "\000" 
+    IDC_HORLOGE_COMBO, 0x403, 19, 0
+0x6550, 0x646e, 0x6c75, 0x2065, 0x6564, 0x7020, 0x7261, 0x7571, 0x7465, 
+"\000" 
+    IDC_HORLOGE_COMBO, 0x403, 18, 0
+0x6f48, 0x6c72, 0x676f, 0x2065, 0x20e0, 0x7053, 0x7269, 0x6c61, 0x0065, 
+
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_MENU MENU 
+BEGIN
+    POPUP "Barre des tâches"
+    BEGIN
+        MENUITEM "A propos...",                 ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_OPTIONS_MENU
+        MENUITEM "Réveil",                      ID_SONNERIE
+        MENUITEM SEPARATOR
+        MENUITEM "Stopper",                     ID_FINSON
+        MENUITEM "Quitter",                     ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LIEN_CURSOR         CURSOR                  "res\\lien.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_WEB_EDIT            "http://www.libertys.com/"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WBEROUX             "Par WBC : http://www.alc.net/wbc/"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\SystemTrayDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
